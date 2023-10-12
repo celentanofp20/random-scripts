@@ -4,7 +4,8 @@ import time
 
 from selenium import webdriver
 
-
+#  was necessary in old version of selenium and chrome driver had to match installed version
+# not necessary in new selenium: https://stackoverflow.com/questions/77111127/how-can-we-download-chromedriver-117
 service = Service()
 driver = webdriver.Chrome(
     service=Service(executable_path="/Applications/chromedriver_mac_arm64/chromedriver")
